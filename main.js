@@ -1,4 +1,7 @@
-import { Kafka } from 'kafkajs'
+import { Kafka } from 'kafkajs';
+import fs from 'fs';
+import csv from 'csv-parser';
+
 const BROKER_1 = process.env.BROKER_1 || 'localhost:9092'
 const BROKER_2 = process.env.BROKER_2 || 'localhost:9092'
 const BROKER_3 = process.env.BROKER_3 || 'localhost:9092'
